@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- font awesome cdn font icon css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="hero-header">
+    <div class="wrapper">
+      <header>
+        <div class="logo">
+          <i class="fa-solid fa-n"></i>
+          <div class="logo-text">Syed Nadeem</div>
+        </div>
+        <nav>
+          <div class="togglebtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="navlinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+        <div class="container">
+          <div class="hero-pic">
+            <img src="profile.png" alt="profile pic">
+          </div>
+
+          <div class="hero-text">
+            <h5>Hi I'm <span class="">Frontend Developer</span></h5>
+            <h1>Syed Nadeem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore impedit laboriosam enim possimus eveniet corrupti excepturi porro error nam nesciunt vel dignissimos eaque consectetur asperiores aperiam voluptates a, illum ipsum.</p>
+
+            <div class="btn-group">
+              <a href="#" class="btn">Download CV</a>
+              <a href="#" class="btn">Contact</a>
+            </div>
+
+            <div class="social">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <script>
+    /*creating button click show hide navbar*/ 
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li");
+
+    togglebtn.addEventListener("click" , function(){
+      this.classList.toggle("click");
+      nav.classList.toggle("open");
+
+    })
+
+  </script>
+ 
+</body>
+</html>
